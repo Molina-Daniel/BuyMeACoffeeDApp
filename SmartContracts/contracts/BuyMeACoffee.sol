@@ -53,4 +53,18 @@ contract BuyMeACoffee {
             _message
         );
     }
+
+    /**
+    * @dev send the entire balance straight to the owner
+    */
+    function withdrawTips() public {
+        require(owner.send(address(this).balance));
+    }
+
+    /**
+    * @dev retrieve the list of memos received and stored in the contract
+    */
+    function getMemos() public view returns (Memo[] memory) {
+        return memos;
+    }
 }
