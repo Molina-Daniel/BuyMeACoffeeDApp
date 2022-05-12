@@ -4,7 +4,7 @@ pragma solidity ^0.8.0;
 contract BuyMeACoffee {
     // Event emitted when a Memo is created
     event NewMemo(
-        address indexed sender,
+        address indexed from,
         uint256 timestamp,
         string name,
         string message
@@ -12,7 +12,7 @@ contract BuyMeACoffee {
 
     // Memo struct
     struct Memo {
-        address sender;
+        address from;
         uint256 timestamp;
         string name;
         string message;
