@@ -1,6 +1,8 @@
 //SPDX-License-Identifier: Unlicense
 pragma solidity ^0.8.0;
 
+// Deployed to Goerli at:  0x77C45ADB236098efB0D4D318F518B2C86E827938
+
 contract BuyMeACoffee {
     // Event emitted when a Memo is created
     event NewMemo(
